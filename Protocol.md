@@ -5,7 +5,10 @@ The Wix Restaurants API is a JSON-RPC variant with a single endpoint:
 
 Requests are POSTed as JSON objects:
 
-    {"type":"some_request_type", ...}
+~~~
+{"type":"some_request_type", ...}
+~~~
+{: .language-json}
 
 Successful responses are returned as JSON objects:
 
