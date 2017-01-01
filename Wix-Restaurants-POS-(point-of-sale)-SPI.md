@@ -10,20 +10,26 @@ WebHook endpoints must be valid HTTPS URLs that accept POST requests with `appli
 
 When a new order is submitted, Wix Restaurants will POST the full order information, e.g.
 
-    {"menu":{...}, "order":{...}}
+~~~ json
+{"menu":{}, "order":{}}
+~~~
 
 where ```menu``` is a [Menu object](Data-structures#menu), and ```order``` is an [Order object](Data-structures#order).
 
 Upon successfully receiving the order, the WebHook must answer with the following within 10 seconds of receiving the notification, or the order will be rejected and the customer will be shown an error message:
 
-    {"value":{"orderId":"XXX"}}
+~~~ json
+{"value":{"orderId":"XXX"}}
+~~~
 
 where ```XXX``` is the point of sale's internal order identifier.
 
 ## Errors
 If the WebHook cannot receive the order for any reason, it should answer with the following:
 
-    {"error":{"code":"XXX", "description":"YYY"}}
+~~~ json
+{"error":{"code":"XXX", "description":"YYY"}}
+~~~
 
 where ```XXX``` is one of the error codes below, and ```YYY``` is a human-readable error message.
 
@@ -39,6 +45,8 @@ If the point of sale is PCI-DSS level 1 complaint, merchants may prefer to have 
 
 In this case, Wix Restaurants will also post full card information, e.g.-
 
-    {"menu":{...}, "order":{...}, "cards":{"card_token_1":{...}, "card_token_2":{...}, ...}
+~~~ json
+{"menu":{}, "order":{}, "cards":{"card_token_1":{}, "card_token_2":{}}}
+~~~
 
 where ```cards``` maps card tokens to full card information.

@@ -52,6 +52,8 @@ The Wix Restaurants API is localized by design, and any user-generated string ca
 
 A localized string is simply a map from locales to values. For example, a restaurant's title may be represented as:
 
-    {"en_US":"The Testaurant","fr_FR":"Le Testaurant","he_IL":"המבדקה"}
+~~~ json
+{"en_US":"The Testaurant","fr_FR":"Le Testaurant","he_IL":"המבדקה"}
+~~~
 
 API users should display the value associated with their locale of choice, falling back to the value associated with the restaurant's default locale (as specified by `Restaurant.locale`) which is guaranteed to always exist.

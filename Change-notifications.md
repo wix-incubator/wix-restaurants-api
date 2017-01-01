@@ -7,17 +7,22 @@ By design, notifications only indicate where the change was. To find out what ch
 
 WebHooks must answer with the following within 10 seconds of receiving the notification, or the notification will be retried a few times:
 
-    {"value":{}}
+~~~ json
+{"value":{}}
+~~~
 
 WebHooks are currently in closed beta. For inquiries, email dannyl@wix.com
 
 ## Restaurant change notifications
 Upon any change in the restaurant's business info or menu, Wix Restaurants will POST the restaurant's ID, e.g.
 
-    {"organizationId":"8830975305376234"}
+~~~ json
+{"organizationId":"8830975305376234"}
+~~~
 
 ## Order change notifications
 Upon any change in an order's status, Wix Restaurants will POST the order's ID, e.g.
 
-    {"orderId":"1234"}
-
+~~~ json
+{"orderId":"1234"}
+~~~
