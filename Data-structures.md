@@ -8,6 +8,7 @@ description: Wix Restaurants main data structures
 
 ## Restaurant
 A [Restaurant](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/openrest/v1_1/Restaurant.java) object holds the information associated with a single venue (a single physical location):
+
 * ID
 * Title
 * Address
@@ -21,6 +22,7 @@ See: [Finding your restaurant's id](Finding-your-restaurant's-id)
 A [Menu](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/openrest/v1_1/Menu.java) object holds the complete menu information for a Restaurant.
 
 Menu information is hierarchical:
+
 * The complete menu information is a list of menus, e.g. "Lunch Menu", "Dinner Menu", "Wines Menu"
 * A menu consists of a list of menu sections, e.g. "Starters", "Mains", "Drinks"
 * A menu section holds a list of items, e.g. "Hamburger", "Cheeseburger"
@@ -31,12 +33,13 @@ Menu information is hierarchical:
 From a technical perspective, this whole thing is compacted to two fields in the Menu object:
 
 1. ```items```: a list of [Item](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/openrest/v1_1/Item.java) objects.
-1. ```sections```: a list of [MenuSection](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/openrest/v1_1/MenuSection.java) objects. Top-level menu sections refer to menus, with their "children" field as the list of menu-sections.
+2. ```sections```: a list of [MenuSection](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/openrest/v1_1/MenuSection.java) objects. Top-level menu sections refer to menus, with their "children" field as the list of menu-sections.
 
 Example: [printing a menu](https://github.com/wix/wix-restaurants-java-sdk/blob/master/wix-restaurants-java-examples/src/main/java/com/wix/restaurants/examples/MenuExample.java)
 
 ## Order
 An [Order](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/openrest/v1_1/Order.java) object holds the information associated with a pickup or delivery:
+
 * ID
 * restaurant ID
 * customer contact information: name, phone, email
