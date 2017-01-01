@@ -1,3 +1,9 @@
+---
+layout: page
+title: Wix Restaurants main data structures
+tagline: Wix Restaurants main data structures
+description: Wix Restaurants main data structures
+---
 # Main data structures
 
 ## Restaurant
