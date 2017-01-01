@@ -1,4 +1,5 @@
 Integrating 3rd-party food ordering services to Wix Restaurants requires dealing with three issues:
+
 * Menu management and synchronization
 * Order submission and status monitoring
 * Payment processing
