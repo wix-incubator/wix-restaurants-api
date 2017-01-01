@@ -3,7 +3,7 @@ The Wix Restaurants API is is the canonical way to integrate with the [Wix Resta
 
 The API exposes the full functionality of the platform (there are no private APIs), and all Wix Restaurants products are developed on top of it.
 
-For best results, use the official SDKs for [Java](https://github.com/wix/wix-restaurants-java-sdk) or [JavaScript](https://github.com/wix/wix-restaurants-js-sdk)). Alternatively, read on.
+For best results, use the official SDKs for [Java](https://github.com/wix/wix-restaurants-java-sdk) or [JavaScript](https://github.com/wix/wix-restaurants-js-sdk). Alternatively, read on.
 
 ## Getting started
 
