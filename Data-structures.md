@@ -52,6 +52,7 @@ Ordered items are represented as a list of [OrderItem](https://github.com/wix/op
 Example: [submitting a new order](https://github.com/wix/wix-restaurants-java-sdk/blob/master/wix-restaurants-java-examples/src/main/java/com/wix/restaurants/examples/SubmitOrderExample.java)
 
 # Additional data structures
+
 ## LocalizedString
 The Wix Restaurants API is localized by design, and any user-generated string can vary between locales: from the restaurant's title to item descriptions.
 
