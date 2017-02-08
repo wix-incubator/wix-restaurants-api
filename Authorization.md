@@ -35,7 +35,7 @@ To retrieve a Wix app instance,
 
 1. Open the Wix editor
 2. Double-click on one of the Wix Restaurants apps to open its settings dialog
-3. Right click anywhere in this dialog, and choose "View page source"
+3. Right click anywhere in this dialog, and choose "View frame source"
 4. A new tab should open with a URL that looks like ```view-source:https://apps.wixrestaurants.com/...&instance=XXX&...```
 5. Note the instance query parameter value (```XXX``` above)
 
