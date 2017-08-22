@@ -12,7 +12,7 @@ For best results, use the official SDKs for [Java](https://github.com/wix/wix-re
 * [Data structures](Data-structures)
 * [Change notifications](Change-notifications)
 
-## 3rd-party intagrations
+## 3rd-party integrations
 
 * [Food ordering services](Integrating-food-ordering-services-to-Wix-Restaurants)
 * [Payment gateways](Integrating-payment-gateways-to-Wix-Restaurants)
