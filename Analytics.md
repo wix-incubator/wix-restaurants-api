@@ -56,3 +56,12 @@ All of the endpoints must receieve a valid [access token](Authorization) with ma
 The access token must be provided inside an 'Authorization' header according to the Bearer standard (see RFC 6750).
 
 A valid Authorization header value example: ``` Bearer <access token with manager permissions for restaurant/chain> ```
+
+## Example
+The following cURL command:
+
+~~~ bash
+curl -X "GET" -H "Authorization: Bearer someAccessToken" "https://analytics.wixrestaurants.com/v1/restaurants/someRestaurantId/orders/stats?metric=price&period=day&time_zone=Asia%2FJerusalem&since=1485043200000&until=1485129600000l&statuses=accepted,new"
+~~~
+
+issues a request to retrieve the count of orders with ```accepted``` or ```new``` status that were made between 22/01/2017 (including) and 23/01/2017 (excluding) from  a restaurant with id ```someRestaurantId``` and the total sum of their prices grouped by day.
