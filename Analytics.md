@@ -8,7 +8,7 @@ Querying for online ordering stats of a specific restaturant can be done using t
 GET https://analytics.wixrestaurants.com/v1/restaurants/{restaurant_id}/orders/stats
 ~~~
 
-with the follwoing required query parameters:
+with the following required query parameters:
 ~~~
 * metric (String): "price"
 * period (String): "day"/"week"/"month"/"year"/"lifetime"
