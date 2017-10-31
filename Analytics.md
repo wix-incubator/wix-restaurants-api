@@ -45,7 +45,7 @@ Successful responses for lifetime groups are returned as a JSON object represent
 including the count and total of order prices for that group:
 
 ~~~ json
-{"stats": [{"count": "someCount", "total": "someTotal"}]}
+{"stats": [{"count": someCount, "total": someTotal}]}
 ~~~
 
 Unsuccessful responses are returned as a JSON object describing the relevant problem details according to RFC 7807.
