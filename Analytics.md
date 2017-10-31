@@ -9,30 +9,40 @@ GET https://analytics.wixrestaurants.com/v1/restaurants/{restaurant_id}/orders/s
 ~~~
 
 with the following required query parameters:
-~~~
-* metric (String): "price"
-* period (String): "day"/"week"/"month"/"year"/"lifetime"
-* time_zone (String): a valid timezone id
-* since (Long): timestamp 
-* until (Long): timestamp
-~~~
+
+|name     |type  |allowed values                              |
+|---------|------|--------------------------------------------|
+|metric   |String|price                                       |
+|group_by |String|day, week, month, year, lifetime, hourOfWeek|
+|time_zone|String|a valid timezone id                         |
+|since    |Long  |any timestamp                               |
+|until    |Long  |any timestamp                               |
 
 and the following optional query parameters:
-~~~
-* sources (String): an optional comma separated filter of relevant sources (who made the order)
-* platforms (String): an optional comma separated filter of relevant platforms (where the order was made)
-* statuses (String): an optional comma separated filter of relevant order statuses
-~~~
 
-Successful responses for non lifetime periods are returned as a JSON object representing an array of aggregated periods 
-including the start time of the period and the count and total of order prices for that period:
+|name     |type  |description                                                                        |
+|---------|------|-----------------------------------------------------------------------------------|
+|sources  |String|an optional comma separated filter of relevant sources (who made the order)        |
+|platforms|String|an optional comma separated filter of relevant platforms (where the order was made)|
+|statuses |String|an optional comma separated filter of relevant order statuses                      |
+
+Successful responses for non lifetime groups are returned as a JSON object representing an array of aggregated groups 
+including the group id and the count and total of order prices for that group:
 
 ~~~ json
-{"stats": [{"startTime": "yyyy-MM-dd", "count": "someCount", "total": "someTotal"}]}
+{"stats": [{"id": "someGroupId", "count": someCount, "total": someTotal}]}
 ~~~
 
-Successful responses for lifetime periods are returned as a JSON object representing an array of a single aggregated period 
-including the count and total of order prices for that period:
+The group id is derived according to the group_by query parameter as described in the following table:
+
+|group_by                        |group id                                                         |
+|--------------------------------|-----------------------------------------------------------------|
+|day, week, month, year, lifetime|start time in yyyy-MM-dd format                                  |
+|hourOfWeek                      |an index between 0 and 167 representing the relevant hour of week|
+
+
+Successful responses for lifetime groups are returned as a JSON object representing an array of a single aggregated group 
+including the count and total of order prices for that group:
 
 ~~~ json
 {"stats": [{"count": "someCount", "total": "someTotal"}]}
@@ -61,7 +71,7 @@ A valid Authorization header value example: ``` Bearer <access token with manage
 The following cURL command:
 
 ~~~ bash
-curl -X "GET" -H "Authorization: Bearer someAccessToken" "https://analytics.wixrestaurants.com/v1/restaurants/someRestaurantId/orders/stats?metric=price&period=day&time_zone=Asia%2FJerusalem&since=1485043200000&until=1485129600000l&statuses=accepted,new"
+curl -X "GET" -H "Authorization: Bearer someAccessToken" "https://analytics.wixrestaurants.com/v1/restaurants/someRestaurantId/orders/stats?metric=price&group_by=day&time_zone=Asia%2FJerusalem&since=1485043200000&until=1485129600000l&statuses=accepted,new"
 ~~~
 
 issues a request to retrieve the count of orders with ```accepted``` or ```new``` status that were made between 22/01/2017 (including) and 23/01/2017 (excluding) from  a restaurant with id ```someRestaurantId``` and the total sum of their prices grouped by day.
