@@ -26,7 +26,7 @@ and the following optional query parameters:
 |platforms|String|an optional comma separated filter of relevant platforms (where the order was made)|
 |statuses |String|an optional comma separated filter of relevant order statuses                      |
 
-Successful responses for non lifetime groups are returned as a JSON object representing an array of aggregated groups 
+Successful responses are returned as a JSON object representing an array of aggregated groups 
 including the group id and the count and total of order prices for that group:
 
 ~~~ json
@@ -35,18 +35,12 @@ including the group id and the count and total of order prices for that group:
 
 The group id is derived according to the group_by query parameter as described in the following table:
 
-|group_by                        |group id                                                         |
-|--------------------------------|-----------------------------------------------------------------|
-|day, week, month, year, lifetime|start time in yyyy-MM-dd format                                  |
-|hourOfWeek                      |an index between 0 and 167 representing the relevant hour of week|
-|monthOfYear                     |an index between 1 and 12 representing the relevant month of year|
-
-Successful responses for lifetime groups are returned as a JSON object representing an array of a single aggregated group 
-including the count and total of order prices for that group:
-
-~~~ json
-{"stats": [{"count": someCount, "total": someTotal}]}
-~~~
+|group_by              |group id                                                         |
+|----------------------|-----------------------------------------------------------------|
+|day, week, month, year|start time in yyyy-MM-dd format                                  |
+|hourOfWeek            |an index between 0 and 167 representing the relevant hour of week|
+|monthOfYear           |an index between 1 and 12 representing the relevant month of year|
+|lifetime              |N/A                                                              |
 
 Unsuccessful responses are returned as a JSON object describing the relevant problem details according to RFC 7807.
 
