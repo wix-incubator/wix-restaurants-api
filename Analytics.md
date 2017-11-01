@@ -10,13 +10,13 @@ GET https://analytics.wixrestaurants.com/v1/restaurants/{restaurant_id}/orders/s
 
 with the following required query parameters:
 
-|name     |type  |allowed values                              |
-|---------|------|--------------------------------------------|
-|metric   |String|price                                       |
-|group_by |String|day, week, month, year, lifetime, hourOfWeek|
-|time_zone|String|a valid timezone id                         |
-|since    |Long  |any timestamp                               |
-|until    |Long  |any timestamp                               |
+|name     |type  |allowed values                                           |
+|---------|------|---------------------------------------------------------|
+|metric   |String|price                                                    |
+|group_by |String|day, week, month, year, lifetime, hourOfWeek, monthOfYear|
+|time_zone|String|a valid timezone id                                      |
+|since    |Long  |any timestamp                                            |
+|until    |Long  |any timestamp                                            |
 
 and the following optional query parameters:
 
@@ -39,7 +39,7 @@ The group id is derived according to the group_by query parameter as described i
 |--------------------------------|-----------------------------------------------------------------|
 |day, week, month, year, lifetime|start time in yyyy-MM-dd format                                  |
 |hourOfWeek                      |an index between 0 and 167 representing the relevant hour of week|
-
+|monthOfYear                     |an index between 1 and 12 representing the relevant month of year|
 
 Successful responses for lifetime groups are returned as a JSON object representing an array of a single aggregated group 
 including the count and total of order prices for that group:
