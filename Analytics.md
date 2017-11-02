@@ -15,8 +15,8 @@ with the following required query parameters:
 |metric   |String|`price`                                                                              |
 |group_by |String|`day`, `week`, `month`, `year`, `lifetime`, `hourOfWeek`, `monthOfYear`              |
 |time_zone|String|a valid [timezone id](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. `America/New_York` |
-|since    |Long  |timestamp (number of milliseconds since January 1, 1970, 00:00:00 UTC)               |
-|until    |Long  |timestamp (see `until`)                                                              |
+|since    |Long  |timestamp, inclusive (number of milliseconds since January 1, 1970, 00:00:00 UTC)    |
+|until    |Long  |timestamp, exclusive (see `until`)                                                   |
 
 and the following optional query parameters:
 
