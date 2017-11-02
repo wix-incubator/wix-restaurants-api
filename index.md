@@ -11,6 +11,7 @@ For best results, use the official SDKs for [Java](https://github.com/wix/wix-re
 * [Authorization](Authorization)
 * [Data structures](Data-structures)
 * [Change notifications](Change-notifications)
+* [Analytics API](Analytics)
 
 ## 3rd-party integrations
 
