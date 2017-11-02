@@ -10,13 +10,13 @@ GET https://analytics.wixrestaurants.com/v1/restaurants/{restaurant_id}/orders/s
 
 with the following required query parameters:
 
-|name     |type  |allowed values                                           |
-|---------|------|---------------------------------------------------------|
-|metric   |String|price                                                    |
-|group_by |String|day, week, month, year, lifetime, hourOfWeek, monthOfYear|
-|time_zone|String|a valid timezone id                                      |
-|since    |Long  |any timestamp                                            |
-|until    |Long  |any timestamp                                            |
+|name     |type  |allowed values                                                                       |
+|---------|------|-------------------------------------------------------------------------------------|
+|metric   |String|price                                                                                |
+|group_by |String|day, week, month, year, lifetime, hourOfWeek, monthOfYear                            |
+|time_zone|String|a valid [timezone id](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. `America/New_York` |
+|since    |Long  |any timestamp                                                                        |
+|until    |Long  |any timestamp                                                                        |
 
 and the following optional query parameters:
 
