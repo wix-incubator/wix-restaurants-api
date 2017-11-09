@@ -10,16 +10,16 @@ GET https://analytics.wixrestaurants.com/v1/restaurants/{restaurant_id}/orders/s
 
 with the following query parameters:
 
-|name       |type  |required|value                                                                                |
-|-----------|------|--------|-------------------------------------------------------------------------------------|
-|`metric`   |String|yes     |`price`                                                                              |
-|`group_by` |String|yes     |`day`, `week`, `month`, `year`, `lifetime`, `hourOfWeek`, `monthOfYear`              |
-|`time_zone`|String|yes     |a valid [timezone id](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. `America/New_York` |
-|`since`    |Long  |yes     |timestamp, inclusive (number of milliseconds since January 1, 1970, 00:00:00 UTC)    |
-|`until`    |Long  |yes     |timestamp, exclusive (see `since`)                                                   |
-|`sources`  |String|no      |comma separated list of order sources                                                |
-|`platforms`|String|no      |comma separated list of order [platforms](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/wix/restaurants/Platforms.java)                                            |
-|`statuses` |String|no      |comma separated list of order [statuses](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/wix/restaurants/orders/Statuses.java)                                    |
+|name       |type  |required|value                                                                                    |
+|-----------|------|--------|-----------------------------------------------------------------------------------------|
+|`metric`   |String|yes     |`price`                                                                                  |
+|`group_by` |String|yes     |`day`, `week`, `month`, `year`, `lifetime`, `hourOfWeek`, `monthOfYear`                  |
+|`time_zone`|String|yes     |a valid [timezone id](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. `America/New_York`                                                                                                    |
+|`since`    |Long  |yes     |timestamp, inclusive (number of milliseconds since January 1, 1970, 00:00:00 UTC)        |
+|`until`    |Long  |yes     |timestamp, exclusive (see `since`)                                                       |
+|`sources`  |String|no      |comma separated list of order sources                                                    |
+|`platforms`|String|no      |comma separated list of order [platforms](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/wix/restaurants/Platforms.java)       |
+|`statuses` |String|no      |comma separated list of order [statuses](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/wix/restaurants/orders/Statuses.java) |
 
 Successful responses are returned as a JSON object representing an array of aggregated groups 
 including the group id and the count and total of order prices for that group:
