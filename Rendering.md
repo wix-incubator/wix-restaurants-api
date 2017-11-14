@@ -30,4 +30,3 @@ where `params` is an object with the following fields:
 |`viewMode`   |String     |yes      |`restaurant`, `customer`                                                                |
 |`cardStyle`  |String     |yes      |`minimal`                                                                               |
 |`unbranded`  |Boolean    |yes      |false                                                                                   |
-|`unbranded`  |Boolean    |yes      |false                                                                                   |
