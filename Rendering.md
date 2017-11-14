@@ -2,7 +2,7 @@
 
 The Wix Restaurants Rendering API renders domain objects to HTML.
 
-> :warning: This API is currently in alpha, and may change without notice.
+> ⚠ This API is currently in alpha, and may change without notice.
 
 ## Orders
 To render orders, use the following [JSON-RPC](https://en.wikipedia.org/wiki/JSON-RPC) endpoint:
