@@ -28,7 +28,7 @@ Likewise, error responses:
 {"error":{"code":"some_error_code","message":"some error message"}}
 ~~~
 
-While the service supports various modes of authentication, the recommended flow is to exchange a Wix [App Instance](https://dev.wix.com/docs/infrastructure/app-instance/) with an access token, and use the access token for all subsequent API requests. The generated access token is valid for up to 48 hours, after which it needs to be re-generated from a new Wix App instance.
+While the service supports various modes of authentication, the recommended flow is to exchange a Wix [App Instance](https://dev.wix.com/docs/infrastructure/app-instance/) with an access token, and use the access token for all subsequent API requests.
 
 ## Retrieving a Wix App Instance
 To retrieve a Wix app instance,
