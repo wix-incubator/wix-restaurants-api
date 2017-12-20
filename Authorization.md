@@ -45,10 +45,8 @@ We are aware of how cumbersome this is, and are working on ways to improve the f
 The following cURL command generates an access token from a Wix App Instance (```XXX``` in the example):
 
 ~~~ bash
-curl -X "POST" -H "Content-Type: application/json" -d '{"type":"wix.loginInstance","appKey":"13c1402c-27f2-d4ab-7463-ee7c89e07578","instance":"XXX"}' "https://auth.wixrestaurants.com/v1.0"
+curl -X "POST" -H "Content-Type: application/json" -d '{"type":"wix.loginInstance","instance":"XXX"}' "https://auth.wixrestaurants.com/v1.0"
 ~~~
-
-The ```appKey``` field specifies which Wix Restaurants app was used to retrieve the Wix App Instance ([possible values](https://github.com/wix/wix-restaurants-java-sdk/blob/master/wix-restaurants-java-client/src/main/java/com/wix/restaurants/WixAppIds.java)).
 
 A successful response returns a [LoginResponse](https://github.com/wix/wix-restaurants-authentication/blob/master/wix-restaurants-authentication-api/src/main/java/com/wix/restaurants/authentication/model/LoginResponse.java) value:
 
