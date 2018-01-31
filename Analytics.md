@@ -60,7 +60,7 @@ A valid Authorization header value example: ``` Bearer <access token with manage
 The following cURL command:
 
 ~~~ bash
-curl -X "GET" -H "Authorization: Bearer someAccessToken" "https://analytics.wixrestaurants.com/v1/restaurants/someRestaurantId/orders/stats?metric=price&group_by=day&time_zone=Asia%2FJerusalem&since=1485043200000&until=1485129600000l&statuses=accepted,new"
+curl -X "GET" -H "Authorization: Bearer someAccessToken" "https://analytics.wixrestaurants.com/v1/restaurants/someRestaurantId/orders/stats?metric=price&group_by=day&time_zone=Asia%2FJerusalem&since=1485043200000&until=1485129600000&statuses=accepted,new"
 ~~~
 
 issues a request to retrieve the count of orders with ```accepted``` or ```new``` status that were made between 22/01/2017 (including) and 23/01/2017 (excluding) from  a restaurant with id ```someRestaurantId``` and the total sum of their prices grouped by day.
