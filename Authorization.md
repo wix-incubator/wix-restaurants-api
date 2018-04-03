@@ -33,13 +33,10 @@ While the service supports various modes of authentication, the recommended flow
 ## Retrieving a Wix App Instance
 To retrieve a Wix app instance,
 
-1. Open the Wix editor
-2. Double-click on one of the Wix Restaurants apps to open its settings dialog
-3. Right click anywhere in this dialog, and choose "View frame source"
-4. A new tab should open with a URL that looks like ```view-source:https://apps.wixrestaurants.com/...&instance=XXX&...```
-5. Note the instance query parameter value (```XXX``` above)
-
-We are aware of how cumbersome this is, and are working on ways to improve the flow.
+1. Access your site's Dashboard (see instructions [here](https://support.wix.com/en/article/accessing-your-dashboard-1928525)).
+2. Open the browser's development console.
+3. You should see a line that says `[Restaurants] init app with instance XXX`.
+4. Note the `XXX` - this is your Wix App Instance.
 
 ## Example
 The following cURL command generates an access token from a Wix App Instance (```XXX``` in the example):
