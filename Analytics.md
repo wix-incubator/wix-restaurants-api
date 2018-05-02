@@ -2,7 +2,7 @@
 With the Wix Restaurants Analytics API you can query for stats about your online ordering activities.
 
 ## Restaurant Orders Stats
-Querying for online ordering stats of a specific restaturant can be done using the following endpoint:
+Querying for online ordering stats of a specific restaurant can be done using the following endpoint:
 
 ~~~
 GET https://analytics.wixrestaurants.com/v1/restaurants/{restaurant_id}/orders/stats
