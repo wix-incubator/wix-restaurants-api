@@ -30,12 +30,12 @@ including the group id and the count and total of order prices for that group:
 
 The group id is derived according to the group_by query parameter as described in the following table:
 
-|group_by              |group id                                                         |
-|----------------------|-----------------------------------------------------------------|
-|day, week, month, year|start time in yyyy-MM-dd format                                  |
-|hourOfWeek            |an index between 0 and 167 representing the relevant hour of week|
-|monthOfYear           |an index between 1 and 12 representing the relevant month of year|
-|lifetime              |N/A                                                              |
+|group_by              |group id                                             |
+|----------------------|-----------------------------------------------------|
+|day, week, month, year|start time in yyyy-MM-dd format                      |
+|hourOfWeek            |0 (Sunday 00:00-01:00) to 167 (Saturday 23:00-24:00) |
+|monthOfYear           |month-of-year index: 1 (January) to 12 (December)    |
+|lifetime              |N/A                                                  |
 
 Unsuccessful responses are returned as a JSON object describing the relevant problem details according to RFC 7807.
 
