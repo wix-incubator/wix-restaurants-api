@@ -34,7 +34,7 @@ The group id is derived according to the group_by query parameter as described i
 |----------------------|-----------------------------------------------------|
 |day, week, month, year|start time in YYYY-MM-DD format                      |
 |hourOfWeek            |0 (Sunday 00:00-01:00) to 167 (Saturday 23:00-24:00) |
-|monthOfYear           |month-of-year index: 1 (January) to 12 (December)    |
+|monthOfYear           |1 (January) to 12 (December)                         |
 |lifetime              |N/A                                                  |
 
 Unsuccessful responses are returned as a JSON object describing the relevant problem details according to RFC 7807.
