@@ -14,15 +14,15 @@ WebHooks must answer with the following within 10 seconds of receiving the notif
 WebHooks are currently in closed beta. For inquiries, email dannyl@wix.com
 
 ## Restaurant change notifications
-Upon any change in the restaurant's business info or menu, Wix Restaurants will POST the restaurant's ID, e.g.
+Upon any change in the restaurant's business info or menu, Wix Restaurants will POST the restaurant's identifier, e.g.
 
 ~~~ json
 {"organizationId":"8830975305376234"}
 ~~~
 
 ## Order change notifications
-Upon any change in an order's status, Wix Restaurants will POST the order's ID, e.g.
+Upon any change in an order's status, Wix Restaurants will POST the restaurant and order identifiers, e.g.
 
 ~~~ json
-{"orderId":"1234"}
+{"restaurantId":"8830975305376234","orderId":"1234"}
 ~~~
