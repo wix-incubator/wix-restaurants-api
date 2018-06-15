@@ -1,7 +1,7 @@
 # Protocol
 The Wix Restaurants API is a RESTful service with this base URL:
 
-    https://api.wixrestaurants.com/v12
+    https://api.wixrestaurants.com/v2
 
 Requests and responses use JSON.
 
