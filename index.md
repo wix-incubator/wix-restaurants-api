@@ -13,6 +13,7 @@ For best results, use the official SDKs for [Java](https://github.com/wix/wix-re
 * [Change notifications](Change-notifications)
 * [Analytics API](Analytics)
 * [Rendering API](Rendering)
+* [Search API](Search)
 
 ## 3rd-party integrations
 
