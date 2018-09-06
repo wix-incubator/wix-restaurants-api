@@ -69,21 +69,21 @@ with the same query parametres as in [Restaurants Near](Search#restaurants-near)
 Successful and unsuccessful responses are also the same.
 
 ## Permissions
-Anyone can use the search API. No special permissions are rewuired.
+Anyone can use the search API. No special permissions are required.
 
 ## Examples
 The following cURL command:
 
 ~~~ bash
-curl -X "GET" "https://search.wixrestaurants.com/v1/restaurants/delivering?lat=40.6892&lng=-74.0444"
+curl -X "GET" "https://search.wixrestaurants.com/v1/restaurants/delivering?lat=40.748817&lng=-73.985428"
 ~~~
 
-issues a request to retrieve all restaurants that are delivering to the statue of liberty.
+issues a request to retrieve all restaurants that are delivering to the empire state building.
 
 The following cURL command:
 
 ~~~ bash
-curl -X "GET" "https://search.wixrestaurants.com/v1/restaurants/near?lat=40.6892&lng=-74.0444&radius=1280"
+curl -X "GET" "https://search.wixrestaurants.com/v1/restaurants/near?lat=40.748817&lng=-73.985428&radius=1609.34"
 ~~~
 
-issues a request to retrieve all restaurants that are located within 1280m from the statue of liberty.
+issues a request to retrieve all restaurants that are located within 1609.34m (one mile) from the empire state building.
