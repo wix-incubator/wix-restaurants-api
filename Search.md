@@ -64,7 +64,7 @@ Querying for chain branches that are located within a given radius from a given 
 GET https://search.wixrestaurants.com/v1/chains/{chain_id}/branches/near
 ~~~
 
-with the same query parametres as in [Chain Branches Delievring](Search#chain-branches-delivering) above.
+with the same query parametres as in [Restaurants Near](Search#restaurants-near) above.
 
 Successful and unsuccessful responses are also the same.
 
