@@ -12,11 +12,10 @@ Wix Restaurants supports three use cases for menu management.
 3. **Independent**: Menu data is managed in both systems independently, with Wix Restaurants items manually linked to the POS items by ID.
 
 ### Order submission and handling
-Wix Restaurants supports three use cases for sending orders to the POS.
+Wix Restaurants supports two use cases for sending orders to the POS.
 
-1. **Push (Wix protocol)**: [Wix Restaurants POS SPI](Wix-Restaurants-POS-(point-of-sale)-SPI) defines a simple webhook-based protocol that lets POS systems receive orders in real-time. This is our preferred integration method, as it offers the best customer experience.
-2. **Push (POS protocol)**: If the POS offers a web-based API for submitting orders to the restaurant, Wix Restaurants can push incoming orders through it in real-time. We prioritize POS integrations based on user requests.
-3. **Pull**: The POS can periodically (e.g. every 1 minute) query the Wix Restaurants API for new orders, import them, and mark them as accepted or rejected.
+1. **Push**: [Wix Restaurants POS SPI](Wix-Restaurants-POS-(point-of-sale)-SPI) defines a simple webhook-based protocol that lets POS systems receive orders in real-time. This is our preferred integration method, as it offers the best customer experience.
+2. **Pull**: The POS can periodically (e.g. every 1 minute) query the Wix Restaurants API for new orders, import them, and mark them as accepted or rejected.
 
 ### Payment processing
 Wix Restaurants supports two use cases for processing customer payments.
