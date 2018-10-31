@@ -11,7 +11,7 @@ WebHooks must answer with the following within 10 seconds of receiving the notif
 {"value":{}}
 ~~~
 
-WebHooks are currently in closed beta. For inquiries, email dannyl@wix.com
+WebHooks are currently in closed beta. For inquiries, email guybe@wix.com
 
 ## Restaurant change notifications
 Upon any change in the restaurant's business info or menu, Wix Restaurants will POST the restaurant's identifier, e.g.
