@@ -1,8 +1,6 @@
 # Wix Restaurants POS SPI
 The Wix Restaurants POS SPI defines a standard way for point of sale systems to receive incoming orders from Wix in real-time. This is the best method to [integrate your point of sale with Wix Restaurants](Integrating-POS-(point-of-sale)-systems-to-Wix-Restaurants).
 
-This SPI is currently available for select partners, email guybe@wix.com for details.
-
 ## Protocol
 Wix Restaurants pushes incoming orders in real-time via a simple WebHook.
 
