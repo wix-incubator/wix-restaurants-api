@@ -11,8 +11,6 @@ Wix Restaurants products are self-managed by the restaurant staff, and so act as
 
 Example: [printing a menu](https://github.com/wix/wix-restaurants-java-sdk/blob/master/wix-restaurants-java-examples/src/main/java/com/wix/restaurants/examples/MenuExample.java)
 
-To avoid constant polling for changes, 3rd-parties can register a webhook that gets called on any change in the business info or menu data.
-
 ### Order submission and status monitoring
 3rd-party services can submit new orders to any restaurant. Once received, 3rd-party orders go through the exact same flow as orders that originated from the restaurant's own systems: they are delivered to the restaurant via the restaurant's channel of choice, and trigger the restaurant's predefined "delayed order" notifications (if needed).
 
