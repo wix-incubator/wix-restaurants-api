@@ -1,4 +1,7 @@
 # Change notifications via WebHooks 
+
+## *** Deprecated API - Will be removed by August 1st 2022 ***
+
 The Wix Restaurants platform supports change notifications via a set of WebHooks.
 
 WebHooks endpoints must be valid HTTPS URLs that accept POST requests with `application/json` content-type.
