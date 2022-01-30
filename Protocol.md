@@ -1,4 +1,6 @@
 # Protocol
+
+## *** Deprecated API - Will be removed by August 1st 2022 ***
 The Wix Restaurants API is a RESTful service with this base URL:
 
     https://api.wixrestaurants.com/v2
