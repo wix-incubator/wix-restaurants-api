@@ -1,5 +1,7 @@
 # Main data structures
 
+## *** Deprecated API - Will be removed by August 1st 2022 ***
+
 ## Restaurant
 A [Restaurant](https://github.com/wix/openrest4j/blob/master/openrest4j-api/src/main/java/com/openrest/v1_1/Restaurant.java) object holds the information associated with a single venue (a single physical location):
 

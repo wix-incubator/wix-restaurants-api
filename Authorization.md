@@ -1,4 +1,7 @@
 # Authorization
+
+## *** Deprecated API - Will be removed by August 1st 2022 ***
+
 Our general philosophy is that any information that could be obtained through anonymous web-scraping or UI automation should not require authentication. This includes all API requests that retrieve public data (business info, menus) or submit orders.
 
 Authentication is required for API requests that modify public data (change the business phone number, add a menu item, accept an order), or access non-public information (the list of open orders, payment gateway credentials). These requests have a mandatory ```accessToken``` field that's used to verify the user's permissions - the rest of this article deals with this.
