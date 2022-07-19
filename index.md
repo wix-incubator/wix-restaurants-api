@@ -2,7 +2,7 @@
 
 ## *** Deprecated API - This version of API won't be supported anymore starting August 1st 2022 ***
 
-### The new API documentation can be found in [Wix Docs](https://bo.wix.com/wix-docs/rest/restaurants)
+### The new API documentation can be found in [Wix Docs](https://dev.wix.com/api/rest/wix-restaurants)
 
 
 ### Old Version:
